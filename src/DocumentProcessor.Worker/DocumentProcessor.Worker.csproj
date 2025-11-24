@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-DocumentProcessor.Worker-2f3b1382-c601-4378-9922-37f21fd0ebf9</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="WolverineFx" />
+    <PackageReference Include="WolverineFx.RabbitMQ" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DocumentProcessor.Core\DocumentProcessor.Core.csproj" />
+    <ProjectReference Include="..\DocumentProcessor.Persistence\DocumentProcessor.Persistence.csproj" />
+  </ItemGroup>
+</Project>
